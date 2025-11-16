@@ -57,8 +57,7 @@ uts-web/
 
 # **Link Project**
 
-* **GitHub Repository:**[(isi link repo kamu di sini)]
-  (https://github.com/denta666/uts_denta_24090111)
+* **GitHub Repository:**[(isi link repo kamu di sini)](https://github.com/denta666/uts_denta_24090111)
 
 * **GitHub Pages:**
   [(isi link GitHub Pages kamu di sini)](https://denta666.github.io/uts_denta_24090111/)
