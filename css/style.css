@@ -1,0 +1,254 @@
+/* ===== Global Styles ===== */
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scale Button Animation */
+@keyframes buttonPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #111;
+}
+
+/* ===== LOGIN PAGE LAYOUT ===== */
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Left Illustration */
+.login-illustration {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-illustration img {
+  width: 75%;
+  opacity: 0.8;
+}
+
+/* Right Form */
+.login-form {
+  animation: fadeIn 0.8s ease-out;
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.login-form h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.forgot {
+  font-size: 12px;
+  text-decoration: none;
+  color: #555;
+  float: right;
+  margin-top: 4px;
+}
+
+/* Login Button */
+.btn-login {
+  animation: fadeIn 1s ease-out;
+  transition: 0.2s ease;
+
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background: #333;
+  animation: buttonPop 0.3s ease;
+
+  background: #333;
+}
+
+/* Separator */
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.separator span {
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.separator p {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.google-btn,
+.facebook-btn {
+  transition: 0.2s ease;
+  flex: 1;
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.google-btn:hover,
+.facebook-btn:hover {
+  animation: buttonPop 0.3s ease;
+  background: #ddd;
+}
+
+/* Signup Text */
+.signup {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.signup a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* ===== DASHBOARD LAYOUT (unchanged except theme consistency) ===== */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar a:hover {
+  color: #ccc;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+/* ===== PRODUCT TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #e6e6e6;
+}
+
+.edit-btn {
+  background: #000;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #aaa;
+  color: #111;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

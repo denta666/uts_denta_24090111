@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Produk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="products.html">Data Produk</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>List Data Produk</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable">
+                    <!-- Data akan dimuat lewat JS -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        loadProducts();
+    </script>
+</body>
+</html>

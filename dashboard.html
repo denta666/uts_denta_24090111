@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="products.html">Data Produk</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Dashboard</h1>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Total Produk</h3>
+                    <p id="totalProducts">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Penjualan</h3>
+                    <p id="totalSales">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Revenue</h3>
+                    <p id="totalRevenue">0</p>
+                </div>
+            </div>
+
+            <button onclick="window.location.href='products.html'" style="margin-top: 30px; padding: 12px 20px; border: none; background: #111; color: #fff; border-radius: 6px; cursor: pointer;">Lihat Data Produk</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        loadSummary();
+    </script>
+</body>
+</html>
