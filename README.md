@@ -61,5 +61,7 @@ uts-web/
   (https://github.com/denta666/uts_denta_24090111)
 
 * **GitHub Pages:**
-  (isi link GitHub Pages kamu di sini)
-"# uts_denta_24090111" 
+  [(isi link GitHub Pages kamu di sini)](https://denta666.github.io/uts_denta_24090111/)
+"# uts_denta_24090111"
+
+NOTE: LOGIN MENGGUNAKAN EMAIL DAN PASSWROD BEBAS
